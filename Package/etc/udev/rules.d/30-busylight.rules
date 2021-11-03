@@ -1,0 +1,1 @@
+SUBSYSTEM=="usb", ATTRS{idVendor}=="27bb", ATTRS{idProduct}=="3bcd", GROUP="busylight", TAG+="uaccess"
