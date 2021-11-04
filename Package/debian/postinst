@@ -7,3 +7,5 @@ echo "Add service user"
 useradd -r -s /bin/false busylight
 
 chown -R busylight:busylight /var/local/busylight
+
+systemctl enable busylight
