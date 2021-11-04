@@ -1,7 +1,6 @@
 #!/bin/bash
 # This `DEBIAN/postremove` script is run post-remove
 echo "Remove service"
-ln -s /usr/share/busylight/busylight.service /etc/systemd/system/
-chmod 664 /etc/systemd/system/busylight.service
+rm /etc/systemd/system/busylight.service
 echo "Remove service user"
-useradd -r -s /bin/false busylight
+deluser busylight

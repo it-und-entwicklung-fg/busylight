@@ -5,3 +5,5 @@ ln -s /usr/share/busylight/busylight.service /etc/systemd/system/
 chmod 664 /etc/systemd/system/busylight.service
 echo "Add service user"
 useradd -r -s /bin/false busylight
+
+chown -R busylight:busylight /var/local/busylight
