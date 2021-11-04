@@ -16,9 +16,9 @@ if __name__ == '__main__':
     config_file = "/var/cache/busylight/config.conf"
     config = ConfigParser()
     config["RGB"] = {
-    "red": "0",
-    "green": "0",
-    "blue": "0"
+        "red": "0",
+        "green": "0",
+        "blue": "0"
     }
 
     while True:
@@ -30,15 +30,14 @@ if __name__ == '__main__':
                     red = int(rgb["red"])
                     green = int(rgb["green"])
                     blue = int(rgb["blue"])
-                    if (red >= 0 and red <= 255) and (green >= 0 and green <= 255) and (blue >= 0 and blue <= 255):
-                        BusyLight(red,green,blue)
+                    if (0 <= red <= 255) and (0 <= green <= 255) and (0 <= blue <= 255):
+                        BusyLight(red, green, blue)
                     else:
                         print("RGB value to small or to large!")
             else:
-                #Write the above sections to config.ini file
+                # Write the above sections to config.ini file
                 with open(config_file, 'w') as conf:
                     config.write(conf)
         else:
             print("Device not found!")
         time.sleep(0.1)
-

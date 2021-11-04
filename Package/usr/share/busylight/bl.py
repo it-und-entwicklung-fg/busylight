@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
 import hid
 
+
 class BusyLight(object):
     """
     Simple class for BusyLight
     """
-    def __init__(self, red=0, green=0, blue=0, blink=0, tone='quiet', vol=0,
-                 vendor_id=0x27bb, product_id=0x3bcd):
 
-        self.red=red
-        self.green=green
-        self.blue=blue
-        self.blink_rate=blink
+    def __init__(self, red=0, green=0, blue=0, blink=0, vendor_id=0x27bb, product_id=0x3bcd):
+        self.red = red
+        self.green = green
+        self.blue = blue
+        self.blink_rate = blink
 
         self._vendor_id = vendor_id
         self._product_id = product_id
@@ -22,7 +22,7 @@ class BusyLight(object):
             'g': 4,
             'b': 5,
             't': 8,
-            'blink':7,
+            'blink': 7,
         }
 
         self.device = hid.device()
@@ -40,16 +40,16 @@ class BusyLight(object):
         """
         # 0 = time
         # 1 = next step
-        # 2 = Repeat
-        # 3 = Rot
-        # 4 = Grün
-        # 5 = Blau
+        # 2 = repeat
+        # 3 = red
+        # 4 = green
+        # 5 = blue
         # 6 = on Time
         # 7 = off Time
-        # 8 = Klingelton
-        
-        self.buffer = [0,16,0,0,0,0,0,0,128] \
-                      + [0]*50 \
+        # 8 = ringtone
+
+        self.buffer = [0, 16, 0, 0, 0, 0, 0, 0, 128] \
+                      + [0] * 50 \
                       + [255, 255, 255, 255, 6, 147]
         self.write()
 
@@ -69,8 +69,8 @@ class BusyLight(object):
         self.buffer[63] = (checksum >> 8) & 0xffff
         self.buffer[64] = checksum % 256
 
-    def set_color(self,r,g,b, blink_rate=0):
-        #Set the color
+    def set_color(self, r, g, b, blink_rate=0):
+        # Set the color
         self.red = r
         self.green = g
         self.blue = b
@@ -88,5 +88,6 @@ class BusyLight(object):
     def close(self):
         self.device.close()
 
+
 def is_plugged_in(vendor_id=0x27bb, product_id=0x3bcd):
-    return len(hid.enumerate(vendor_id, product_id)) > 0 
+    return len(hid.enumerate(vendor_id, product_id)) > 0
