@@ -1,0 +1,9 @@
+*.deb
+*.build
+*.buildinfo
+*.changes
+busylight.debhelper.log
+busylight.substvars
+Package/debian/files
+Package/debian/.debhelper
+Package/debian/busylight
