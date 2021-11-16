@@ -13,7 +13,7 @@ if __name__ == '__main__':
     # Tell systemd that our service is ready
     systemd.daemon.notify('READY=1')
 
-    config_file = "/var/cache/busylight/config.conf"
+    config_file = "/var/local/busylight/config.conf"
     config = ConfigParser()
     config["RGB"] = {
         "red": "0",

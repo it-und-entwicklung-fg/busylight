@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import hid
-
+import time
 
 class BusyLight(object):
     """
@@ -32,6 +32,7 @@ class BusyLight(object):
         self.reset_buffer()
         self.update_buffer()
         self.write()
+        time.sleep(0.1)
         self.device.close()
 
     def reset_buffer(self):

@@ -2,5 +2,7 @@
 # This `DEBIAN/postremove` script is run post-remove
 echo "Remove service"
 rm /etc/systemd/system/busylight.service
+echo "Remove config dir"
+rm -r /var/local/busylight/
 echo "Remove service user"
 deluser busylight
