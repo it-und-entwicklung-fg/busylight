@@ -1,0 +1,13 @@
+__pycache__/
+busylight_**.deb
+busylight_**.build
+busylight_**.buildinfo
+busylight_**.changes
+busylight_**.dsc
+busylight_*.tar.gz
+busylight.debhelper.log
+busylight.substvars
+Package/debian/files
+Package/debian/.debhelper
+Package/debian/busylight
+busylight_*.ppa.upload

@@ -1,0 +1,12 @@
+#!/bin/bash
+# This `DEBIAN/postinst` script is run post-installation
+echo "Link service"
+ln -s /usr/share/busylight/busylight.service /etc/systemd/system/
+chmod 664 /etc/systemd/system/busylight.service
+echo "Add service user"
+useradd -r -s /bin/false busylight
+echo "Add config dir"
+chown -R busylight:busylight /var/local/busylight
+chmod a+w /var/local/busylight
+echo "Enable service"
+systemctl enable busylight
