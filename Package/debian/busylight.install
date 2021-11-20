@@ -1,2 +1,3 @@
 /etc/udev/rules.d
 /usr/share/busylight
+/var/local/busylight
