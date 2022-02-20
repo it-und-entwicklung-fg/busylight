@@ -7,6 +7,6 @@ echo "Add service user"
 useradd -r -s /bin/false busylight
 echo "Add config dir"
 chown -R busylight:busylight /var/local/busylight
-chmod a+w /var/local/busylight
+chmod -R a+w /var/local/busylight
 echo "Enable service"
 systemctl enable busylight

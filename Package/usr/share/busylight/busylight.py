@@ -1,4 +1,4 @@
-# Python script for the Python Demo Service
+#!/usr/bin/python3
 
 from configparser import ConfigParser
 import os.path
@@ -13,7 +13,7 @@ if __name__ == '__main__':
     # Tell systemd that our service is ready
     systemd.daemon.notify('READY=1')
 
-    config_file = "/var/local/busylight/config.conf"
+    config_file = "/var/local/busylight/color.conf"
     config = ConfigParser()
     config["RGB"] = {
         "red": "0",
