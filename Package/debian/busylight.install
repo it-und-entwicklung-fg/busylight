@@ -1,2 +1,6 @@
 /etc/udev/rules.d
 /usr/share/busylight
+<<<<<<< Updated upstream
+=======
+/var/local/busylight/color.conf
+>>>>>>> Stashed changes
