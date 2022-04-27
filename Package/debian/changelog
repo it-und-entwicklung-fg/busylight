@@ -1,6 +1,5 @@
 busylight (1.0.2) focal; urgency=low
 
-  * Cleaned up code
-  * Removed unneeded dependencies
+  * Fixed error that color.conf was not created
 
  -- IT und Entwicklung - FG <kontakt@it-und-entwicklung-fg.de>  Wed, 05 Oct 2021 17:28:00 +0200
