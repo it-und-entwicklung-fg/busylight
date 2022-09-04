@@ -1,6 +1,0 @@
-workflow:
-  steps:
-    - branch_package:
-        source_project: home:it-und-entwicklung-fg:busylight
-        source_package: busylight
-        target_project: releases
