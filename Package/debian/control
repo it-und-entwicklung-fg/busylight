@@ -7,6 +7,6 @@ build-arch: all
 
 Architecture: all
 Package: busylight
-Version: 1.0.2
+Version: 1.0.3
 Depends: python3, python3-hid
 Description: A service to control kuando busylight.

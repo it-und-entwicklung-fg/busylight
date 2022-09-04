@@ -1,5 +1,6 @@
-busylight (1.0.2) focal; urgency=low
+busylight (1.0.3) focal; urgency=low
 
   * Fixed error that color.conf was not created
+  * added busylight-color command to set color via terminal
 
- -- IT und Entwicklung - FG <kontakt@it-und-entwicklung-fg.de>  Wed, 05 Oct 2021 17:28:00 +0200
+ -- IT und Entwicklung - FG <kontakt@it-und-entwicklung-fg.de>  Sun, 04 Sep 2022 21:35:00 +0200
