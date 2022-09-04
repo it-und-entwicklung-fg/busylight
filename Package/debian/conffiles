@@ -1,3 +1,2 @@
-/usr/share/busylight
 /var/local/busylight/color.conf
 /etc/udev/rules.d/30-busylight.rules
