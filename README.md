@@ -22,4 +22,3 @@ Gerne kann dieses Projekt weiterentwicklelt werden oder auch Vorschläge für zu
 
 ## Lizenz und Verwendung
 Diese Projekt wird unter GPLv3 bereitgestellt.
-
