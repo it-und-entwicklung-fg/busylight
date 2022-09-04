@@ -10,3 +10,6 @@ chown -R busylight:busylight /var/local/busylight
 chmod -R a+w /var/local/busylight
 echo "Enable service"
 systemctl enable busylight
+
+ln -s /usr/share/busylight/busylight-color.py /bin/busylight-color
+chmod 555 /bin/busylight-color
