@@ -40,7 +40,7 @@ sudo apt install busylight
 ```
 
 ## Verwendung
-Die gewünschte Farbe kann in der Config-Datei (unter `/var/local/busylight/color.conf`)eingetragen werden
+Die gewünschte Farbe kann in der Config-Datei (unter `/var/local/busylight/color.conf`) oder via `busylight-color -r <red> -g <green> -b <blue>` eingetragen werden
 
 ## Weiterentwicklung
 Gerne kann dieses Projekt weiterentwicklelt werden oder auch Vorschläge für zusätzliche Funktionen an mich gesendet werden.
