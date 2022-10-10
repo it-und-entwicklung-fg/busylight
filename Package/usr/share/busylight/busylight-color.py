@@ -3,7 +3,7 @@
 import os, sys, getopt
 from configparser import ConfigParser
 
-config_file = "/var/local/busylight/color.conf"
+config_file = "/var/local/busylight/state"
 config = ConfigParser()
 
 def main(argv):

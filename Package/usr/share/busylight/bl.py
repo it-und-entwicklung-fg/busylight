@@ -63,7 +63,7 @@ class BusyLight(object):
         self.buffer[self.positions['r']] = self.red
         self.buffer[self.positions['g']] = self.green
         self.buffer[self.positions['b']] = self.blue
-        self.buffer[self.positions['blink']] = 0
+        self.buffer[self.positions['blink']] = self.blink_rate
 
         # update the checksum
         checksum = sum(self.buffer[0:63])
